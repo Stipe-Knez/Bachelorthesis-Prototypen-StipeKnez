@@ -1,15 +1,16 @@
 # Prototypanwendung zur Bachelorthesis von Stipe Knez
 
-Diese Anwendung hat zwei Variationen. In der ersten Variation wird eine passwortbasierte Authentfizierung durchgeführt und in der zweiten Version eine passwortlose Authentifizierung. Beide Variaten unterscheiden sich nur in der Keycloak-Konfiguration. Um von einer Variante zur anderen zu wechseln,
+Diese Anwendung hat zwei Variationen. In der ersten Variation wird eine passwortbasierte Authentfizierung durchgeführt und in der zweiten Version eine passwortlose Authentifizierung. Beide Variaten unterscheiden sich nur in der Keycloak-Konfiguration. Durch eine Änderung in der Keycloak-Konfiguration, lässt sich zwischen beiden Varianten wechseln.
 
-# Was wird benötigt?
+# Was wird benötigt? / Was wurde genutzt?
 - OpenJDK 11
-- Keycloak 18.0.0
+- Keycloak 18.0.0 -> Genutzt wurde hier die Keycloak-Version 18.0.0 mit Quarkus: https://www.keycloak.org/archive/downloads-18.0.0.html
 - Node 14.15.1 / npm 6.14.8 
 - WebStorm / IntelliJ zum Ausführen der Projekte (Angular und Spring Boot)
 
 # Vorbereitung
-Zunächst müssen Sie die vohandene Keycloak-Konfigurations datei in ihre Keycloak-Anwendung importieren. Dazu:
+Zunächst müssen Sie die vorhandene Keycloak-Konfigurationsdatei in ihre Keycloak-Anwendung importieren. Dazu:
+
 1. Starten Sie Keycloak über die Kommandozeile aus dem Keycloak "bin"-Ordner mit dem Befehl "kc start-dev"
 2. Rufen Sie die Keycloak Admin-Konsole unter localhost:8080 auf
 3. Loggen Sie sich mit dem Nuternamen: admin und Passwort: admin ein
