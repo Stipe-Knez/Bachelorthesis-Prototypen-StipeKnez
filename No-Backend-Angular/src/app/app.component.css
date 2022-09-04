@@ -1,0 +1,13 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.example-card{
+  width: 700px;
+  height: 300px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  vertical-align:middle;
+}

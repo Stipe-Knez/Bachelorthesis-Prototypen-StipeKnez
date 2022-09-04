@@ -1,0 +1,37 @@
+<p>
+  <mat-toolbar color="primary">
+    <span>No-Backend-Security</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+</p>
+<div>
+  <mat-card class="example-card">
+
+    <mat-card-header>
+      <mat-card-title>
+        Optionen:
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>Einloggen:
+          <button mat-raised-button color="primary"
+                  style="margin-left: 40px"
+                  (click)="login()">Login</button>
+        </mat-list-item>
+        <mat-list-item>Auf geschützte Ressource zugreifen:
+          <a (click) = "callResource()"><button mat-raised-button color="primary" style="margin-left: 40px">Zugriff</button></a>
+        </mat-list-item>
+        <mat-list-item>Geschützte Ressource: {{microserviceResponse}}
+        </mat-list-item>
+        <mat-list-item>Ausloggen:
+          <button mat-raised-button color="primary"
+                  style="margin-left: 40px"
+                  (click)="logout()">Logout</button>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+
+  </mat-card>
+</div>
