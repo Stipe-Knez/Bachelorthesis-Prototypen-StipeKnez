@@ -1,0 +1,10 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: microservice
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/Thesis
